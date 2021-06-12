@@ -9,7 +9,7 @@
 /// <reference path="../node_modules/cypress/types/cypress.d.ts" />
 /// <reference path="../node_modules/cypress/types/cypress-type-helpers.d.ts" />
 /// <reference path="../node_modules/cypress/types/cypress-global-vars.d.ts" />
-
+/// <reference path="../node_modules/cypress-cucumber-preprocessor/steps/index.d.ts" />
 declare namespace Cypress {
   // add custom Cypress command to the interface Chainable<Subject>
   interface Chainable<Subject = any> {

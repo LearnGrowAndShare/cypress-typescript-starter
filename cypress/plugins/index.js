@@ -17,6 +17,7 @@
  */
 // eslint-disable-next-line no-unused-vars
 const webpack = require("@cypress/webpack-preprocessor")
+const cucumber = require('cypress-cucumber-preprocessor').default
 module.exports = (on) => {
   const options = {
     // send in the options from your webpack.config.js, so it works the same
