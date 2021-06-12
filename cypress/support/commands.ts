@@ -24,12 +24,16 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('clickHtmlElement', (label: string | number | RegExp, tagName: string) => {
+Cypress.Commands.add(
+  "clickHtmlElement",
+  (label: string | number | RegExp, tagName: string) => {
     cy.get(tagName).click()
-})
+  }
+)
 
-Cypress.Commands.add('typeIntoInput', (label: string | number | RegExp, tagName: string) => {
+Cypress.Commands.add(
+  "typeIntoInput",
+  (label: string | number | RegExp, tagName: string) => {
     cy.get(tagName).click()
-  })
-
-
+  }
+)

@@ -4,7 +4,9 @@
   "description": "cypress starter",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "postinstall": "husky install",
+    "prettier": "prettier --write . --ignore-unknown"
   },
   "keywords": [
     "cypress"

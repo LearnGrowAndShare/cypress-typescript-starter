@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Test</title>
-  </head>
-  <body>
+    <head>
+        <title>Test</title>
+    </head>
+    <body>
+        <script>
+            function sumMe() {
+                const form = document.forms["sum"]
+                const firstvalue = form.elements.first.value
+                const secondValue = form.elements.second.value
+                document.getElementById("result").textContent =
+                    +firstvalue + +secondValue
+                return false
+            }
+        </script>
+
+        <form name="sum" onsubmit="return sumMe()">
+            <input name="first" type="number" />
+            <input name="second" type="number" />
+            <button id="sumbutton" type="submit">Get sum</button>
+        </form>
+        <p id="result"></p>
+        <a href="#">click me</a>
+    </body>
+
     <script>
-        function sumMe() {
-            const form = document.forms['sum'];
-            const firstvalue = form.elements.first.value;
-            const secondValue = form.elements.second.value;
-           document.getElementById('result').textContent = +firstvalue + +secondValue;
-           return false;
-        }
+        window.add = (a, b) => a + b
     </script>
-
-    <form name="sum" onsubmit="return sumMe()">
-        <input name="first" type="number"/>
-        <input name="second" type="number"/>
-        <button id="sumbutton" type="submit">Get sum</button>
-    </form>
-    <p id="result"> </p>
-    <a href="#">click me</a>
-  </body>
-
-  <script>
-    window.add = (a, b) => a + b
-  </script>
 </html>
