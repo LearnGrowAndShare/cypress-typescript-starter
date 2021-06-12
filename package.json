@@ -1,0 +1,28 @@
+{
+  "name": "cypress-typescript-starter",
+  "version": "1.0.0",
+  "description": "cypress starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "learngrowandshare",
+  "license": "MIT",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^5.9.0",
+    "@testing-library/cypress": "^7.0.6",
+    "cypress": "^7.5.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "2.3.1",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
